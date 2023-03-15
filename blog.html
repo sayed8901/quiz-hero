@@ -41,11 +41,11 @@
                         <br> <br>
                         * map, filter or find returns the output in an array, but forEach doesn't return anything. 
                         <br> <br>
-                        * if there exists any empty element inside an array, the map, filter or find doesn't execute functions for empty elements. But, forEach will run over those empty elements & provides "undefined". 
+                        * If there exists any empty element inside an array, the map, filter or find doesn't execute functions for empty elements. But, forEach will run over those empty elements & provides "undefined". 
                         <br> <br>
                         * map will call the particular function for each elements of the array & change or update all the elements accordingly. On the other hand, filter will only provide the elements that passes the certain condition or function. 
                         <br> <br>
-                        * Though map & filter can provide multiple elements based on original array or conditions imposed, but the find method will always provide single element as the output.
+                        * Though map & filter can provide multiple elements based on original array or conditions imposed, on the contrary the find method will always provide a single (the first matched) element as the output.
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                         <br> <br>
                         There are some major differences among them in terms of their mode of action. 
                         <br> <br>
-                        * Both in localStorage or sessionStorage data can only be saved onto the browser or users local memory while, cookies can use both the browser & the server storage. 
+                        * Both in localStorage or sessionStorage data can only be saved onto the browser or user's local memory while, cookies can use both the browser & the server storage. 
                         <br> <br>
                         * Cookies or localStorage data remain saved until the user clears it manually, while sessionStorage data are cleared immediately after the session ends. 
                         <br> <br>
@@ -81,13 +81,13 @@
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#question-accordion">
                     <div class="accordion-body bg-secondary-subtle">
-                        JS event loop is a runtime process model which performs the execution of the code of a javaScript file. 
+                        JS event loop is a runtime process model which performs the execution of the code of a javaScript file in the browser or web-page. 
                         <br> <br>
-                        There is a call stack used in event loop where the tasks are stacked sequentially. There also might be sub-tasks within a task such as: callbacks. When one stack (with its all sun-tasks) is finished, call-stack automatically calls the next stack. This is known as sequentially or synced operation.
+                        There is a call stack used in event loop where the tasks are stacked sequentially. There also might be sub-tasks within a task such as: callbacks. When one stack (with its all sub-tasks) is finished, call-stack automatically calls the next stack. This is known as sequentially or synced execution context.
                         <br> <br>
-                        JavaScript event loop can also handle event queue. It means, javaScript can use 'await' functionality while waiting for the response of a particular operation & in the meanwhile, event loop can execute the other call stacks.
+                        JavaScript event loop can also handle event queue. It means, javaScript can use 'await' functionality while waiting for the response of a particular operation & meanwhile event loop can execute the other call stacks.
                         <br> <br>
-                        This is how, although being a single-threaded programming language, javascript can handle synchronous & asynchronous operations at a time by using its unique event loop process which incudes the call stack & event queue algorithm. 
+                        This is how, although being a single-threaded programming language, javascript can handle synchronous & asynchronous operations at a time by using its unique event loop process which incudes the call stack & event queue data structure. 
                     </div>
                 </div>
             </div>
@@ -112,11 +112,11 @@
                     <div class="accordion-body bg-secondary-subtle">
                         Here, 'quizTimer()' function uses a parameter named 'dismiss'. If 'dismiss' is true, then timer interval will be cleared by using 'clearInterval()'.
                         <br> <br>
-                        If 'dismiss' is false, 'setInterval()' function makes dynamic timings. Here in this function, Math.floor() creating the numbers dynamically.
+                        If 'dismiss' is false, 'setInterval()' function makes dynamic "timings". Here in this function, 'Math.floor()' creating the numbers dynamically.
                         <br> <br>
-                        After that, these timings including minutes & seconds are injected onto the 'countHtml' element by using innerHTML. 
+                        After that, these timings including 'minutes' & 'seconds' are injected onto the 'countHtml' element by using innerHTML. 
                         <br> <br>
-                        Lastly, the timing updating interval is set to 1000 to update it once in every second.
+                        Lastly, the timing updating interval is set to '1000' to update it once in every second.
                     </div>
                 </div>
             </div>
@@ -130,17 +130,18 @@
                 </h2>
                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#code-review-accordion">
                     <div class="accordion-body bg-secondary-subtle">
-                        'chooseQuiz()' function will use 2 paramener named 'index' & 'givenAns'. Inside this function, by using the 'find()' method, given answer is compared with the JSON data by the 'index no' to the 'id'.
+                        'chooseQuiz()' function will use 2 parameter named 'index' & 'givenAns'. Inside this function, by using the 'find()' method, given answer is compared with the JSON data by the 'index no' to the 'id'.
                         <br> <br>
-                        If the id exists & matched with the JSON data, required answer is 'spliced' from the JSON data.
+                        If the 'id' exists & matched with the JSON data, required answer is added using 'splice'.
                         <br> <br>
                         finally, to display or show the desired 'answer', 'displayAnswers()' is being called.
+
                         <br> <br> <br>
-                        'displayAnswers()' firstly performs a 'sort' operation to sort the answers.
+                        'displayAnswers()' firstly performs a 'sort' operation to sort the answers by its "id".
                         <br> <br>
-                        Then, individual quiz data can be gathered here by using 'forEach()'.
+                        Then, individual quiz data can be generated here by using 'forEach()'.
                         <br> <br>
-                        Finally, innerHTML is used to create & add  data dynamically.
+                        Finally, 'innerHTML' is used to create & add  data dynamically.
                     </div>
                 </div>
             </div>
