@@ -19,7 +19,7 @@
         Welcome to my blog</h2>
         <h5 class="pb-2 pb-sm-4">
             Here I am going to share about some basic concepts regarding <b>intermediate JavaScript concepts</b>. 
-            <br> If you have any sort of positive feedback regarding the learning, feel free to contact with me!
+            <br> If you have any sort of feedback regarding the learning, feel free to contact with me!
         </h5>
     </div>
 
@@ -49,6 +49,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- question no 2 -->
             <div class="accordion-item border-0 rounded-5">
                 <h2 class="accordion-header" id="headingTwo">
@@ -70,6 +71,7 @@
                     </div>
                 </div>
               </div>
+              
               <!-- question no 3 -->
               <div class="accordion-item border-0 rounded-5">
                 <h2 class="accordion-header" id="headingThree">
@@ -108,7 +110,13 @@
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#code-review-accordion">
                     <div class="accordion-body bg-secondary-subtle">
-                        Java 
+                        Here, 'quizTimer()' function uses a parameter named 'dismiss'. If 'dismiss' is true, then timer interval will be cleared by using 'clearInterval()'.
+                        <br> <br>
+                        If 'dismiss' is false, 'setInterval()' function makes dynamic timings. Here in this function, Math.floor() creating the numbers dynamically.
+                        <br> <br>
+                        After that, these timings including minutes & seconds are injected onto the 'countHtml' element by using innerHTML. 
+                        <br> <br>
+                        Lastly, the timing updating interval is set to 1000 to update it once in every second.
                     </div>
                 </div>
             </div>
@@ -122,7 +130,17 @@
                 </h2>
                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#code-review-accordion">
                     <div class="accordion-body bg-secondary-subtle">
-                        JS 
+                        'chooseQuiz()' function will use 2 paramener named 'index' & 'givenAns'. Inside this function, by using the 'find()' method, given answer is compared with the JSON data by the 'index no' to the 'id'.
+                        <br> <br>
+                        If the id exists & matched with the JSON data, required answer is 'spliced' from the JSON data.
+                        <br> <br>
+                        finally, to display or show the desired 'answer', 'displayAnswers()' is being called.
+                        <br> <br> <br>
+                        'displayAnswers()' firstly performs a 'sort' operation to sort the answers.
+                        <br> <br>
+                        Then, individual quiz data can be gathered here by using 'forEach()'.
+                        <br> <br>
+                        Finally, innerHTML is used to create & add  data dynamically.
                     </div>
                 </div>
             </div>
